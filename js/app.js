@@ -57,7 +57,7 @@ let aTimesb = multiply(a,b);
 let comTotal = sum(addAb[0], c);
 let timesTotal = multiply(aTimesb[0], c);
 
-const sumProdArr = [comTotal[0], timesTotal[0], `${a} and ${b} and ${C} sum to ${comTotal[0]}.`, `The product of ${a} and ${b} and ${c} is ${timesTotal[0]},`];
+const sumProdArr = [comTotal[0], timesTotal[0], `${a} and ${b} and ${c} sum to ${comTotal[0]}.`, `The product of ${a} and ${b} and ${c} is ${timesTotal[0]},`];
 
 return sumProdArr;
 
@@ -82,11 +82,20 @@ sumAndMultiply(4,5,7)
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // // // Write your code here
-let testArray = [2, 3, 4]; 
+// let testArray = [2, 3, 4]; 
 
-function sumArray(sumArr) { 
+function sumArray(sumArr) {
 
+let aplusb = sum(sumArr[0], sumArr[1]);
+let comTotal = sum(aplusb[0], sumArr[2]);
+
+const arraySum = [comTotal[0], `${sumArr[0]},$sumArr[1]},$sumArr[2]} was passed in an array of numbers, and ${comTotal[0]} is their sum. `];
+return arraySum
 }
+
+
+
+
 
 // // Here is the test for sumArray(); uncomment it to run it
 
