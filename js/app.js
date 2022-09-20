@@ -27,15 +27,15 @@ testSum(4, 7);
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // // Write your code here
-// function multiply(a, b) { //eslint-disable-line
-//     let myProd = a+b; 
-//     let myStr = `The sum of ${a} and ${b} is ${mySum}.`;
-//     return [myProd, myStr];
+function multiply(a, b) {
+    let myProd = a*b; 
+    let myStr = `The product of ${a} and ${b} is ${myProd}.`;
+    return [myProd, myStr];
   
-//     }
+    }
 
 // // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
