@@ -51,12 +51,23 @@ testMultiply(5,9);
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // // Write your code here
-// function sumAndMultiply(a, b, c) { //eslint-disable-line
+function sumAndMultiply(a, b, c) { 
+let addAb = sum(a,b) 
+let aTimesb = multiply(a,b);
+let comTotal = sum(addAb[0], c);
+let timesTotal = multiply(aTimesb[0], c);
 
-// }
+const sumProdArr = [comTotal[0], timesTotal[0], `${a} and ${b} and ${C} sum to ${comTotal[0]}.`, `The product of ${a} and ${b} and ${c} is ${timesTotal[0]},`];
 
+return sumProdArr;
+
+}
+
+
+
+sumAndMultiply(4,5,7)
 // // Here is the test for sumAndMultiply(); uncomment it to run it
-// // testSumAndMultiply(4,7,5);
+// testSumAndMultiply(4,7,5);
 
 // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -70,16 +81,16 @@ testMultiply(5,9);
 
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
-// // Write your code here
-// let testArray = [2, 3, 4]; //eslint-disable-line
+// // // Write your code here
+let testArray = [2, 3, 4]; 
 
-// function sumArray(sumArr) { //eslint-disable-line
+function sumArray(sumArr) { 
 
-// }
+}
 
 // // Here is the test for sumArray(); uncomment it to run it
 
-// // testSumArray(testArray);
+// testSumArray(testArray);
 
 // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -94,9 +105,9 @@ testMultiply(5,9);
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // // Write your code here
-// function multiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(multArr) { 
 
-// }
+}
 
 // // Here is the test for multiplyArray(); uncomment it to run it
 // // testMultiplyArray(testArray);
